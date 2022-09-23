@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_profile_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/user_icon" />
+    <RelativeLayout
+        android:id="@+id/txt_receiver"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/message_profile_image">
+
+        <TextView
+            android:id="@+id/receiver_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/receiver_messages_layout"
+            android:padding="5dp"
+            android:maxWidth="200dp"
+            android:text="receiver messages here"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/receiver_time_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/receiver_text"
+            android:text="00:00 00/00/0000"
+            android:textColor="#A10D1617"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/message_sender_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/message_sender_file_view"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:id="@+id/sender_image_time_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/message_sender_image_view"
+        android:text="00:00 00/00/0000"
+        android:textColor="#0B0A0A"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/sender_file_time_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_sender_file_view"
+        android:layout_alignParentEnd="true"
+        android:text="00:00 00/00/0000"
+        android:textColor="#0B0A0A"
+        android:layout_marginEnd="20dp"
+        android:textSize="12sp" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="@+id/txt_receiver">
+
+        <TextView
+            android:id="@+id/sender_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/sender_messages_layout"
+            android:maxWidth="200dp"
+            android:padding="8dp"
+            android:text="sendernnnnnnnnnnnnnnnnnnnnnnnnnnnn "
+            android:textColor="#A10D1617"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sender_time_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sender_text"
+            android:layout_alignParentEnd="true"
+            android:text="00:00 00/00/0000"
+            android:textColor="#A10D1617"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/message_receiver_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/message_profile_image"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/message_receiver_file_view"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/message_profile_image"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:id="@+id/receiver_image_time_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/message_profile_image"
+        android:layout_below="@+id/message_receiver_image_view"
+        android:text="00:00 00/00/0000"
+        android:textColor="#A10D1617"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/receiver_file_time_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_receiver_file_view"
+        android:layout_toEndOf="@+id/message_profile_image"
+        android:text="00:00 00/00/0000"
+        android:textColor="#0B0A0A"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>
